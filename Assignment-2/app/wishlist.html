@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HarmonyHub – Wishlist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white">
+    <div class="flex flex-col min-h-screen">
+      <!-- Header (same as home.html) -->
+      <header class="sticky top-0 z-50 bg-white border-b">
+        <div class="container mx-auto px-4 py-4">
+          <div class="flex items-center justify-between">
+            <a href="home.html" class="flex items-center gap-2">
+              <div
+                class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-lg"
+              >
+                ♪
+              </div>
+              <span class="text-2xl font-bold text-gray-900">HarmonyHub</span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8">
+              <a href="home.html" class="text-gray-700 hover:text-blue-600 transition-colors">
+                Home
+              </a>
+              <a href="shop.html" class="text-gray-700 hover:text-blue-600 transition-colors">
+                Shop
+              </a>
+              <a href="about.html" class="text-gray-700 hover:text-blue-600 transition-colors">
+                About
+              </a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+              <a
+                href="wishlist.html"
+                class="relative flex items-center gap-2 px-4 py-2 text-blue-600 font-semibold"
+              >
+                <span>♡</span>
+                <span class="hidden sm:inline">Wishlist</span>
+              </a>
+
+              <a
+                href="cart.html"
+                class="relative flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              >
+                <span>🛒</span>
+                <span class="hidden sm:inline">Cart</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Wishlist content (static, matches Wishlist.tsx layout) -->
+      <main class="flex-1">
+        <!-- Non-empty wishlist example -->
+        <section class="min-h-screen py-8">
+          <div class="container mx-auto px-4">
+            <div class="mb-8">
+              <h1 class="text-4xl font-bold mb-2">My Wishlist</h1>
+              <p class="text-gray-600">
+                2 items saved
+              </p>
+            </div>
+
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+            >
+              <!-- Wishlist item 1 -->
+              <div
+                class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+              >
+                <div class="relative aspect-square overflow-hidden bg-gray-100">
+                  <a href="product-detail.html">
+                    <img
+                      src="https://images.unsplash.com/photo-1589436983457-4e939d701f78?auto=format&fit=crop&w=800&q=80"
+                      alt="Stratocaster Electric Guitar"
+                      class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </a>
+                  <button
+                    type="button"
+                    class="absolute top-3 right-3 p-2 bg-white rounded-full shadow-md hover:bg-red-50 transition-colors"
+                    title="Remove from wishlist"
+                  >
+                    <span class="text-red-500 text-sm">♥</span>
+                  </button>
+                </div>
+
+                <div class="p-4">
+                  <a
+                    href="product-detail.html"
+                    class="font-semibold text-gray-900 hover:text-blue-600 mb-2 block line-clamp-1"
+                  >
+                    Stratocaster Electric Guitar
+                  </a>
+
+                  <p class="text-sm text-gray-600 mb-3 line-clamp-2">
+                    Classic electric guitar with rich tones and versatile playability. Perfect
+                    for rock, blues, and jazz musicians.
+                  </p>
+
+                  <div class="flex items-center justify-between mb-3">
+                    <span class="text-2xl font-bold text-gray-900">
+                      $1,299.99
+                    </span>
+                    <span class="text-sm text-green-600 font-semibold">
+                      In Stock
+                    </span>
+                  </div>
+
+                  <div class="flex gap-2">
+                    <a
+                      href="cart.html"
+                      class="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm"
+                    >
+                      <span>🛒</span>
+                      <span>Add to Cart</span>
+                    </a>
+                    <button
+                      type="button"
+                      class="p-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+                      title="Remove"
+                    >
+                      <span class="text-gray-600 text-sm">✕</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Wishlist item 2 -->
+              <div
+                class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+              >
+                <div class="relative aspect-square overflow-hidden bg-gray-100">
+                  <a href="product-detail.html">
+                    <img
+                      src="https://images.unsplash.com/photo-1670255022693-37f1be72bfcb?auto=format&fit=crop&w=800&q=80"
+                      alt="Digital Piano Keyboard"
+                      class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </a>
+                  <button
+                    type="button"
+                    class="absolute top-3 right-3 p-2 bg-white rounded-full shadow-md hover:bg-red-50 transition-colors"
+                    title="Remove from wishlist"
+                  >
+                    <span class="text-red-500 text-sm">♥</span>
+                  </button>
+                </div>
+
+                <div class="p-4">
+                  <a
+                    href="product-detail.html"
+                    class="font-semibold text-gray-900 hover:text-blue-600 mb-2 block line-clamp-1"
+                  >
+                    Digital Piano Keyboard
+                  </a>
+
+                  <p class="text-sm text-gray-600 mb-3 line-clamp-2">
+                    Premium digital piano with 88 weighted keys and authentic piano sound.
+                    Perfect for students and professionals.
+                  </p>
+
+                  <div class="flex items-center justify-between mb-3">
+                    <span class="text-2xl font-bold text-gray-900">
+                      $1,899.99
+                    </span>
+                    <span class="text-sm text-green-600 font-semibold">
+                      In Stock
+                    </span>
+                  </div>
+
+                  <div class="flex gap-2">
+                    <a
+                      href="cart.html"
+                      class="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm"
+                    >
+                      <span>🛒</span>
+                      <span>Add to Cart</span>
+                    </a>
+                    <button
+                      type="button"
+                      class="p-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+                      title="Remove"
+                    >
+                      <span class="text-gray-600 text-sm">✕</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-12 text-center">
+              <a
+                href="shop.html"
+                class="inline-block px-8 py-3 border border-gray-300 rounded-lg font-semibold hover:bg-gray-50 transition-colors"
+              >
+                Continue Shopping
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Empty wishlist state (optional, commented out)
+        <section class="min-h-screen flex items-center justify-center">
+          <div class="text-center">
+            <div class="text-gray-300 text-6xl mb-4">♡</div>
+            <h2 class="text-3xl font-bold mb-4">Your Wishlist is Empty</h2>
+            <p class="text-gray-600 mb-8">
+              Save your favorite instruments to your wishlist!
+            </p>
+            <a
+              href="shop.html"
+              class="inline-block px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+            >
+              Browse Instruments
+            </a>
+          </div>
+        </section>
+        -->
+      </main>
+
+      <!-- Footer (same as home.html) -->
+      <footer class="bg-gray-900 text-white mt-auto">
+        <div class="container mx-auto px-4 py-12">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+              <div class="flex items-center gap-2 mb-4">
+                <div
+                  class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-gray-900 text-xs font-bold"
+                >
+                  ♪
+                </div>
+                <span class="text-xl font-bold">HarmonyHub</span>
+              </div>
+              <p class="text-gray-400 text-sm">
+                Your premier destination for quality musical instruments. Making music accessible to everyone.
+              </p>
+            </div>
+
+            <div>
+              <h4 class="font-semibold mb-4">Shop</h4>
+              <ul class="space-y-2 text-sm text-gray-400">
+                <li>
+                  <a href="shop.html" class="hover:text-white transition-colors">All Instruments</a>
+                </li>
+                <li>
+                  <a href="shop.html" class="hover:text-white transition-colors">Guitars</a>
+                </li>
+                <li>
+                  <a href="shop.html" class="hover:text-white transition-colors">Keyboards</a>
+                </li>
+                <li>
+                  <a href="shop.html" class="hover:text-white transition-colors">Drums</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-semibold mb-4">Customer Service</h4>
+              <ul class="space-y-2 text-sm text-gray-400">
+                <li><a href="#" class="hover:text-white transition-colors">Contact Us</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Shipping Info</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Returns</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">FAQ</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-semibold mb-4">Follow Us</h4>
+              <div class="flex gap-4 text-gray-400">
+                <a href="#" class="hover:text-blue-400 transition-colors">Fb</a>
+                <a href="#" class="hover:text-blue-400 transition-colors">Tw</a>
+                <a href="#" class="hover:text-pink-400 transition-colors">Ig</a>
+                <a href="#" class="hover:text-red-400 transition-colors">Yt</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400"
+          >
+            <p>&copy; 2026 HarmonyHub. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+

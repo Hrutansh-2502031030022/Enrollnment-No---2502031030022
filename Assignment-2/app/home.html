@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HarmonyHub – Home</title>
+    <!-- Use Tailwind CDN so the classes match the React app -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white">
+    <div class="flex flex-col min-h-screen">
+      <!-- Header (from Header.tsx, without React state) -->
+      <header class="sticky top-0 z-50 bg-white border-b">
+        <div class="container mx-auto px-4 py-4">
+          <div class="flex items-center justify-between">
+            <a href="home.html" class="flex items-center gap-2">
+              <!-- Simple icon replacement -->
+              <div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-lg">
+                ♪
+              </div>
+              <span class="text-2xl font-bold text-gray-900">HarmonyHub</span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8">
+              <a href="home.html" class="text-gray-700 hover:text-blue-600 transition-colors">
+                Home
+              </a>
+              <a href="shop.html" class="text-gray-700 hover:text-blue-600 transition-colors">
+                Shop
+              </a>
+              <a href="about.html" class="text-gray-700 hover:text-blue-600 transition-colors">
+                About
+              </a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+              <a
+                href="wishlist.html"
+                class="relative flex items-center gap-2 px-4 py-2 text-gray-700 hover:text-blue-600 transition-colors"
+              >
+                <span>♡</span>
+                <span class="hidden sm:inline">Wishlist</span>
+              </a>
+
+              <a
+                href="cart.html"
+                class="relative flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              >
+                <span>🛒</span>
+                <span class="hidden sm:inline">Cart</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main content (from Home.tsx) -->
+      <main class="flex-1">
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+          <div class="container mx-auto px-4 py-24">
+            <div class="max-w-3xl">
+              <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                Your Music Journey Starts Here
+              </h1>
+              <p class="text-xl mb-8 text-blue-100">
+                Discover premium musical instruments for every skill level. From beginner to professional, we have the perfect instrument for you.
+              </p>
+              <a
+                href="shop.html"
+                class="inline-flex items-center gap-2 px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              >
+                Shop Now
+                <span class="text-xl">→</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Features -->
+        <section class="py-16 bg-gray-50">
+          <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div class="flex flex-col items-center text-center p-6">
+                <div class="bg-blue-100 p-4 rounded-full mb-4 text-blue-600 text-2xl">
+                  ♫
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Premium Quality</h3>
+                <p class="text-gray-600">
+                  Hand-selected instruments from trusted manufacturers
+                </p>
+              </div>
+
+              <div class="flex flex-col items-center text-center p-6">
+                <div class="bg-blue-100 p-4 rounded-full mb-4 text-blue-600 text-2xl">
+                  🎧
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Expert Support</h3>
+                <p class="text-gray-600">
+                  Get guidance from our team of music professionals
+                </p>
+              </div>
+
+              <div class="flex flex-col items-center text-center p-6">
+                <div class="bg-blue-100 p-4 rounded-full mb-4 text-blue-600 text-2xl">
+                  ★
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Best Prices</h3>
+                <p class="text-gray-600">
+                  Competitive pricing with price match guarantee
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Featured Products (static versions of first 6 products) -->
+        <section class="py-16">
+          <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+              <h2 class="text-4xl font-bold mb-4">Featured Instruments</h2>
+              <p class="text-gray-600 text-lg">
+                Check out our most popular products
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- Product 1 -->
+              <a
+                href="product-detail.html"
+                class="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+              >
+                <div class="relative aspect-square overflow-hidden bg-gray-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1589436983457-4e939d701f78?auto=format&fit=crop&w=800&q=80"
+                    alt="Stratocaster Electric Guitar"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div class="p-4">
+                  <div class="flex items-center gap-1 mb-2">
+                    <span class="text-yellow-400 text-lg">★</span>
+                    <span class="text-sm text-gray-600">4.8</span>
+                  </div>
+                  <h3 class="font-semibold text-gray-900 mb-2 line-clamp-1">
+                    Stratocaster Electric Guitar
+                  </h3>
+                  <p class="text-sm text-gray-600 mb-3 line-clamp-2">
+                    Classic electric guitar with rich tones and versatile playability. Perfect for rock, blues, and jazz musicians.
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <span class="text-2xl font-bold text-gray-900">
+                      $1,299.99
+                    </span>
+                    <span class="text-xs font-semibold px-2 py-1 rounded-full bg-green-100 text-green-700">
+                      In Stock
+                    </span>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Product 2 -->
+              <a
+                href="product-detail.html"
+                class="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+              >
+                <div class="relative aspect-square overflow-hidden bg-gray-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1715431150006-1f03ea6e4a37?auto=format&fit=crop&w=800&q=80"
+                    alt="Professional Acoustic Guitar"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div class="p-4">
+                  <div class="flex items-center gap-1 mb-2">
+                    <span class="text-yellow-400 text-lg">★</span>
+                    <span class="text-sm text-gray-600">4.9</span>
+                  </div>
+                  <h3 class="font-semibold text-gray-900 mb-2 line-clamp-1">
+                    Professional Acoustic Guitar
+                  </h3>
+                  <p class="text-sm text-gray-600 mb-3 line-clamp-2">
+                    Handcrafted acoustic guitar with warm, resonant sound. Ideal for singer-songwriters and acoustic performers.
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <span class="text-2xl font-bold text-gray-900">
+                      $849.99
+                    </span>
+                    <span class="text-xs font-semibold px-2 py-1 rounded-full bg-green-100 text-green-700">
+                      In Stock
+                    </span>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Product 3 -->
+              <a
+                href="product-detail.html"
+                class="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+              >
+                <div class="relative aspect-square overflow-hidden bg-gray-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1670255022693-37f1be72bfcb?auto=format&fit=crop&w=800&q=80"
+                    alt="Digital Piano Keyboard"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div class="p-4">
+                  <div class="flex items-center gap-1 mb-2">
+                    <span class="text-yellow-400 text-lg">★</span>
+                    <span class="text-sm text-gray-600">4.7</span>
+                  </div>
+                  <h3 class="font-semibold text-gray-900 mb-2 line-clamp-1">
+                    Digital Piano Keyboard
+                  </h3>
+                  <p class="text-sm text-gray-600 mb-3 line-clamp-2">
+                    Premium digital piano with 88 weighted keys and authentic piano sound. Perfect for students and professionals.
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <span class="text-2xl font-bold text-gray-900">
+                      $1,899.99
+                    </span>
+                    <span class="text-xs font-semibold px-2 py-1 rounded-full bg-green-100 text-green-700">
+                      In Stock
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="text-center mt-12">
+              <a
+                href="shop.html"
+                class="inline-flex items-center gap-2 px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+              >
+                View All Products
+                <span class="text-xl">→</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Banner -->
+        <section class="py-16 bg-gradient-to-r from-purple-600 to-pink-600 text-white">
+          <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4">
+              New to Music? We're Here to Help!
+            </h2>
+            <p class="text-xl mb-8 text-purple-100">
+              Get expert advice and find the perfect instrument for your journey
+            </p>
+            <a
+              href="about.html"
+              class="inline-flex items-center gap-2 px-8 py-3 bg-white text-purple-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+            >
+              Learn More
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer (adapted from Footer.tsx, static) -->
+      <footer class="bg-gray-900 text-white mt-auto">
+        <div class="container mx-auto px-4 py-12">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+              <div class="flex items-center gap-2 mb-4">
+                <div class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-gray-900 text-xs font-bold">
+                  ♪
+                </div>
+                <span class="text-xl font-bold">HarmonyHub</span>
+              </div>
+              <p class="text-gray-400 text-sm">
+                Your premier destination for quality musical instruments. Making music accessible to everyone.
+              </p>
+            </div>
+
+            <div>
+              <h4 class="font-semibold mb-4">Shop</h4>
+              <ul class="space-y-2 text-sm text-gray-400">
+                <li><a href="shop.html" class="hover:text-white transition-colors">All Instruments</a></li>
+                <li><a href="shop.html" class="hover:text-white transition-colors">Guitars</a></li>
+                <li><a href="shop.html" class="hover:text-white transition-colors">Keyboards</a></li>
+                <li><a href="shop.html" class="hover:text-white transition-colors">Drums</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-semibold mb-4">Customer Service</h4>
+              <ul class="space-y-2 text-sm text-gray-400">
+                <li><a href="#" class="hover:text-white transition-colors">Contact Us</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Shipping Info</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Returns</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">FAQ</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-semibold mb-4">Follow Us</h4>
+              <div class="flex gap-4 text-gray-400">
+                <a href="#" class="hover:text-blue-400 transition-colors">Fb</a>
+                <a href="#" class="hover:text-blue-400 transition-colors">Tw</a>
+                <a href="#" class="hover:text-pink-400 transition-colors">Ig</a>
+                <a href="#" class="hover:text-red-400 transition-colors">Yt</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
+            <p>&copy; 2026 HarmonyHub. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+

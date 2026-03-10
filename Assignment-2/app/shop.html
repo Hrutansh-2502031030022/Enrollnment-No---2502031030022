@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harmony Hub – Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="container site-header-inner">
+        <div class="logo">Harmony<span>Hub</span></div>
+        <nav class="nav-links">
+          <a href="home.html" class="nav-link">Home</a>
+          <a href="shop.html" class="nav-link nav-link-active">Shop</a>
+          <a href="product-detail.html" class="nav-link">Product Detail</a>
+          <a href="cart.html" class="nav-link">Cart</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <header class="mb-sm">
+          <h1 class="section-title" style="text-align:left;">Shop All Instruments</h1>
+          <p class="text-muted">
+            Browse our complete collection of premium musical instruments.
+          </p>
+        </header>
+
+        <!-- Static filters (visual only) -->
+        <section class="filters">
+          <div class="filter-group">
+            <label class="filter-label">Category</label>
+            <div class="filter-chips">
+              <button class="chip chip-active">All Instruments</button>
+              <button class="chip">Guitars &amp; Bass</button>
+              <button class="chip">Keyboards &amp; Pianos</button>
+              <button class="chip">Drums &amp; Percussion</button>
+              <button class="chip">Strings</button>
+              <button class="chip">Brass &amp; Woodwinds</button>
+            </div>
+          </div>
+          <div class="filter-group" style="max-width:12rem;">
+            <label class="filter-label">Sort By</label>
+            <select class="select">
+              <option>Featured</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Highest Rated</option>
+            </select>
+          </div>
+        </section>
+
+        <!-- Product grid (static sample subset) -->
+        <section>
+          <div class="products-grid">
+            <article class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1589436983457-4e939d701f78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                  alt="Stratocaster Electric Guitar"
+                  style="width:100%;height:100%;object-fit:cover;"
+                />
+              </div>
+              <div class="product-body">
+                <h3 class="product-name">Stratocaster Electric Guitar</h3>
+                <p class="text-muted">Classic electric guitar with rich tones and versatile playability.</p>
+                <div class="product-meta">
+                  <span class="product-price">$1,299.99</span>
+                  <span class="product-rating">★ 4.8</span>
+                </div>
+                <div class="product-actions">
+                  <a href="product-detail.html" class="btn btn-primary">View</a>
+                  <span class="badge badge-success">In stock</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1715431150006-1f03ea6e4a37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                  alt="Professional Acoustic Guitar"
+                  style="width:100%;height:100%;object-fit:cover;"
+                />
+              </div>
+              <div class="product-body">
+                <h3 class="product-name">Professional Acoustic Guitar</h3>
+                <p class="text-muted">Warm, resonant sound ideal for singer‑songwriters and performers.</p>
+                <div class="product-meta">
+                  <span class="product-price">$849.99</span>
+                  <span class="product-rating">★ 4.9</span>
+                </div>
+                <div class="product-actions">
+                  <a href="product-detail.html" class="btn btn-primary">View</a>
+                  <span class="badge badge-success">In stock</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1670255022693-37f1be72bfcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                  alt="Digital Piano Keyboard"
+                  style="width:100%;height:100%;object-fit:cover;"
+                />
+              </div>
+              <div class="product-body">
+                <h3 class="product-name">Digital Piano Keyboard</h3>
+                <p class="text-muted">Premium digital piano with 88 weighted keys and authentic feel.</p>
+                <div class="product-meta">
+                  <span class="product-price">$1,899.99</span>
+                  <span class="product-rating">★ 4.7</span>
+                </div>
+                <div class="product-actions">
+                  <a href="product-detail.html" class="btn btn-primary">View</a>
+                  <span class="badge badge-success">In stock</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1762008510357-90b8c10d53ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                  alt="Concert Violin"
+                  style="width:100%;height:100%;object-fit:cover;"
+                />
+              </div>
+              <div class="product-body">
+                <h3 class="product-name">Concert Violin</h3>
+                <p class="text-muted">Handcrafted violin with rich, expressive tone for the stage.</p>
+                <div class="product-meta">
+                  <span class="product-price">$1,599.99</span>
+                  <span class="product-rating">★ 4.9</span>
+                </div>
+                <div class="product-actions">
+                  <a href="product-detail.html" class="btn btn-primary">View</a>
+                  <span class="badge badge-success">In stock</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer-inner">
+        <span>© 2026 Harmony Hub. All rights reserved.</span>
+        <span>Need help choosing? Chat with our experts.</span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
+
